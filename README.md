@@ -1,2 +1,9 @@
-# phpsayforucenter
-phpsay ucenter
+# PHPsay的Ucenter登陆
+
+该方法仅实现了登陆和注册
+
+同步登陆和同步退出暂未实现，等待下次升级
+
+积分同步等待下次升级
+ 
+ 
