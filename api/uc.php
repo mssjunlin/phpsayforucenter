@@ -67,12 +67,8 @@ if (in_array($get['action'], array('test', 'face', 'deleteuser', 'renameuser', '
     //UC的数据库连接
     $GLOBALS['db'] = new ucclient_db;
     $GLOBALS['db']->connect(UC_DBHOST, UC_DBUSER, UC_DBPW, UC_DBNAME, UC_DBCONNECT, true, UC_DBCHARSET);
-    $GLOBALS['tablepre'] = UC_DBTABLEPRE;
-    //TS的数据库连接
-    $GLOBALS['tsdb'] = new ucclient_db;
-    $GLOBALS['tsdb']->connect($tsconfig['DB_HOST'], $tsconfig['DB_USER'], $tsconfig['DB_PWD'], $tsconfig['DB_NAME'], UC_DBCONNECT, true, $tsconfig['DB_CHARSET']);
-    define('TS_DBTABLEPRE', $tsconfig['DB_PREFIX']);
-    $GLOBALS['tstablepre'] = TS_DBTABLEPRE;
+    //暂留
+   
     //执行UC动作
     $uc_note = new uc_note();
     exit($uc_note->$get['action']($get, $post));
